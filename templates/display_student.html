@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_student</title>
+</head>
+<body>
+    <table border="3px">
+        <tr>
+            <th>scname</th>
+            <th>sname</th>
+            <th>sid</th>
+        </tr>
+        {% for i in qstl %}
+            <tr>
+                <td>{{i.scname}}</td>
+                <td>{{i.sname}}</td>
+                <td>{{i.sid}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

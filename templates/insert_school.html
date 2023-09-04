@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert school</title>
+</head>
+<body>
+    <center>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="scn">scname</label>
+            <input type="text" name="scn" id="scn"><br>
+
+            <label for="scp">scprincipal</label>
+            <input type="text" name="scp" id="scp"><br>
+
+            <label for="scl">sclocation</label>
+            <input type="text" name="scl" id="scl"><br>
+            
+            <input type="submit" value="insert_school">
+
+        </form>
+    </center>
+    
+</body>
+</html>
